@@ -1,6 +1,5 @@
 wow! fixed by bugfix/fix. changed by bugfix/change. There a error.
-const { color:colorPalette } = this._options;
-            const { smooth, symbol, symbolSize } = this._options;
+            const { smooth, symbol, symbolSize, symbol, symbolSize } = this._options;
             const series = map(dimensions.slice(1), (f, idx)=>({
                 type: 'line',
                 name: f.name,
@@ -10,15 +9,10 @@ const { color:colorPalette } = this._options;
                 sampling: data.length > 2000 ? 'lttb' : undefined,
                 symbol,
                 symbolSize,
+                symbol,
+                symbolSize,
                 areaStyle: {
-                    opacity: 0.5,
-                    color: new graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: colorPalette[idx],
-                    }, {
-                        offset: 1,
-                        color: 'rgba(255, 255, 255, 0)'
-                    }])
+                    opacity: 0.1,
                 },
                 data: map(data, (d, i)=>[categoryLabels[i], d[f.name]]),
             }));
