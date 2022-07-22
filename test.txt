@@ -1,6 +1,6 @@
 wow! fixed by bugfix/fix. changed by bugfix/change. There a error.
             const { smooth, symbol, symbolSize, symbol, symbolSize } = this._options;
-            const series = map(dimensions.slice(1), (f, idx)=>({
+            const series = map(dimensions.slice(1), (f)=>({
                 type: 'line',
                 name: f.name,
                 smooth,
