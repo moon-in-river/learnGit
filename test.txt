@@ -1,5 +1,5 @@
 wow! fixed by bugfix/fix. changed by bugfix/change. There a error.
-            const { smooth, symbol, symbolSize, symbol, symbolSize } = this._options;
+            const { smooth, symbol, symbolSize } = this._options;
             const series = map(dimensions.slice(1), (f)=>({
                 type: 'line',
                 name: f.name,
@@ -7,8 +7,6 @@ wow! fixed by bugfix/fix. changed by bugfix/change. There a error.
                 label: { show: showLabel },
                 stack: enableStack ? 1 : 0,
                 sampling: data.length > 2000 ? 'lttb' : undefined,
-                symbol,
-                symbolSize,
                 symbol,
                 symbolSize,
                 areaStyle: {
